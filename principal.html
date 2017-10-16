@@ -32,8 +32,21 @@
 
   			<label for="correo">Correo</label> 
 			<input type="email" id="correo" name="email" autocomplete="off" required/><br>
-
-			<input type="submit" value="Enviar"/> 	
+			
+			<label for="producto">Producto a comprar: </label>
+			<input id="producto" list="productos" name="misProductos"/>
+			<datalist id="productos">
+				<option value="Hamburguesa">
+				<option value="café">
+				<option value="cervezas">
+				<option value="camiseta">
+				<option value="gorra">
+			</datalist>
+			<br>
+			<label for="fecha">Fecha de entrega: </label>
+			<input type="date" id="fecha" placeholder="16-10-2017"/>
+			<br>
+			<input type="submit" value="Enviar"/>
 		</form>
 
 
